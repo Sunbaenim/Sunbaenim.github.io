@@ -1,0 +1,23 @@
+/* Debug */
+
+/* * {
+    box-shadow: 0 0 0 3px red inset;
+} */
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,170 @@
+/* Header */
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 10px 100px rgba(0, 0, 0, .1);
+    z-index: 100;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.header-content .logo-title-container {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.header-content .logo-title-container a {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    width: 2rem;
+    cursor: pointer;
+}
+
+header h1 {
+    font-size: 1.25rem;
+}
+
+header img {
+    height: 100%;
+}
+
+header .close {
+    display: none;
+}
+
+/* Header nav */
+
+header nav {
+    max-height: 0;
+    text-align: right;
+    overflow: hidden;
+    transition: all .1s ease-in-out;
+}
+
+header nav li {
+    padding: 2rem 1rem;
+    border-top: 1px solid #dbdbdb;
+    cursor: pointer;
+}
+
+header nav a {
+    color: black;
+}
+
+/* Body */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Buttons */
+
+button {
+    background-color:  #fdb42f;
+    padding: 0.5em 1.5em;
+    border-radius: 0.25rem;
+    border: none;
+    margin-right: 1em;
+    font-family: 'Comfortaa';
+    cursor: pointer;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
+}
+
+button:hover {
+    transform: translateY(-0.25rem);
+    transition: transform .3s;
+}
+
+button:last-child {
+    margin-right: 0;
+}
+
+button a {
+    color: #222;
+}
+
+/* Footer */
+
+footer {
+    background-color: #111;
+    padding: 1rem;
+}
+
+footer .icons-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+footer svg {
+    width: 1.75rem;
+    fill: white;
+}
+
+footer svg:hover {
+    fill: #fdb42f;
+}
+
+footer hr {
+    border: none;
+    height: 1px;
+    background-color: #333;
+    margin: .75rem auto;
+}
+
+footer p {
+    font-size: .875rem;
+    color: #aaa;
+    text-align: center;
+}
+
+/* Desktop */
+
+@media (min-width: 90em) {
+
+    /* Header */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header .logo {
+        width: 3rem;
+        margin-right: 1rem;
+    }
+
+    .hamburger,
+    .close {
+        display: none;
+    }
+
+    header nav {
+        max-height: none;
+        overflow: visible;
+        transition: none;
+    }
+
+    header {
+        padding: 0 2rem;
+    }
+
+    header nav li {
+        margin-right: 3rem;
+        display: inline-block;
+    }
+
+}
