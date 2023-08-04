@@ -71,12 +71,18 @@ body {
 
 /* Buttons */
 
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 button {
     background-color:  #fdb42f;
     padding: 0.5em 1.5em;
     border-radius: 0.25rem;
     border: none;
-    margin-right: 1em;
     font-family: 'Comfortaa';
     cursor: pointer;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, .2);
@@ -165,6 +171,16 @@ footer p {
     header nav li {
         margin-right: 3rem;
         display: inline-block;
+    }
+
+    /* Buttons */
+
+    .buttons-container {
+        display: block;
+    }
+
+    button {
+        margin-right: 1rem;
     }
 
 }
